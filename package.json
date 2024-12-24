@@ -18,5 +18,12 @@
   "dependencies": {
     "dotenv": "^16.4.7",
     "openai": "^4.77.0"
-  }
+  },
+
+  "scripts": {
+    "build": "tsc && vite build",
+    "dev": "vite",
+    "start": "vite"
+}
+
 }
