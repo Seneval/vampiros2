@@ -4,6 +4,9 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
     plugins: [react()],
     build: {
-        outDir: 'dist', // Carpeta donde se genera la salida
+        outDir: 'dist', // Directorio donde se generará la salida
+        rollupOptions: {
+            input: './index.html', // Asegúrate de que apunte a tu index.html
+        },
     },
 });
